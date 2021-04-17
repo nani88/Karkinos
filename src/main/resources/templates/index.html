@@ -33,7 +33,7 @@
                                     <td th:text="${patient.gender}"></td>
                                     <td th:text="${patient.mobile}"></td>
                                     <td><a th:href="@{/viewPatient/{id}(id=${patient.id})}" class="btn btn-primary"><i class="fas fa-user ml-2"></i></a></td>
-                                    <td><a th:href="@{/editPatient/{id}(id=${patient.id})}" class="btn btn-primary"><i class="fas fa-user-edit ml-2"></i></a></td>
+                                    <td><a th:href="@{/editPatientForm/{id}(id=${patient.id})}" class="btn btn-primary"><i class="fas fa-user-edit ml-2"></i></a></td>
                                     <td><a th:href="@{/deletePatient/{id}(id=${patient.id})}" class="btn btn-primary"><i class="fas fa-user-times ml-2"></i></a></td>
                                 </tr>
                             </tbody>
@@ -50,7 +50,7 @@
                         </div>   
                         </form>
                     </div>      
-                    <p class="my-5"><a href="/addPatient" class="btn btn-primary"><i class="fas fa-user-plus ml-2"></i></a></p>
+                    <p class="my-5"><a href="/addPatientForm" class="btn btn-primary"><i class="fas fa-user-plus ml-2"></i></a></p>
                 </div>
             </div>
         </div>
